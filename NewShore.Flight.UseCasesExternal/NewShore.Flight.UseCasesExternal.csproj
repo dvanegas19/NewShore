@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewShore.Flight.UseCasesPortsExternal\NewShore.Flight.UseCasesPortsExternal.csproj" />
+    <ProjectReference Include="..\NewShore.Flight.UsesCasesDTOs\NewShore.Flight.UsesCasesDTOs.csproj" />
+    <ProjectReference Include="..\NewShore.Flight.UsesCasesExternalDTOs\NewShore.Flight.UsesCasesExternalDTOs.csproj" />
+    <ProjectReference Include="..\NewShore.Fliht.UseCases\NewShore.Flight.UseCases.csproj" />
+  </ItemGroup>
+
+</Project>
