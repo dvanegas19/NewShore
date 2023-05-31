@@ -65,7 +65,7 @@ namespace NewShore.Flight.Controllers
             List<GetFlightsExternalParams> ListFlightExternalParams = new List<GetFlightsExternalParams>();
             List<GetFlightParams> ListFlightParams = new List<GetFlightParams>();
             var response = GetFligthExternalInputPort.GetDataFromNewShoreApiMultipleAndReturn(RequestFlightParams.Origin, RequestFlightParams.Destination);
-            return response.Result;
+            return  response.Result;
 
         }
 

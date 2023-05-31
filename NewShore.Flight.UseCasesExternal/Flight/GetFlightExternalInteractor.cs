@@ -36,11 +36,11 @@ namespace NewShore.Flight.UseCasesExternal.Flight
             }
         }
 
-        public Task<GetJourneyExternalParams> GetDataFromNewShoreApiMultipleAndReturn(string Origin, string Destination)
+        public async Task<GetJourneyExternalParams> GetDataFromNewShoreApiMultipleAndReturn(string Origin, string Destination)
         {
             try
             {
-                return GetFligthExternalOutputPort.GetDataFromNewShoreApiMultipleAndReturn(Origin, Destination);
+                return await GetFligthExternalOutputPort.GetDataFromNewShoreApiMultipleAndReturn(Origin, Destination);
             }
             catch (Exception ex)
             {
@@ -49,11 +49,11 @@ namespace NewShore.Flight.UseCasesExternal.Flight
             }
         }
 
-        public Task<GetJourneyExternalParams> GetDataFromNewShoreApiMultiple(string Origin, string Destination)
+        public async Task<GetJourneyExternalParams> GetDataFromNewShoreApiMultiple(string Origin, string Destination)
         {
             try
             {
-                return GetFligthExternalOutputPort.GetDataFromNewShoreApiMultiple(Origin, Destination);
+                return await GetFligthExternalOutputPort.GetDataFromNewShoreApiMultiple(Origin, Destination);
             }
             catch (Exception ex)
             {
